@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+   }
+  
+   body{
+    background: #050e2d;
+   }
+
+   /* Scroll Bar */
+   ::-webkit-scrollbar{
+    width: 12px;
+   }
+  
+   ::-webkit-scrollbar-thumb{
+    background: #1aeeef;
+    border-radius: 6px;
+   }
+
+   .smallnav{
+    position: end;
+    grid-area: nav-one;
+   }
+  
+   .nav{
+    grid-area: nav-two;
+   }
+  
+   .subbox{
+    grid-area: subbox;
+   }
+  
+   .action{
+    grid-area: search;
+   }
+  
+   header
+      {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      padding: 7px 10px;
+      display: grid;
+      justify-content: space-between;
+      align-items: center;
+      background: #1b2141;
+      transition: 0.5s;
+      z-index: 1000;
+      grid-template-areas:
+      'nav-one nav-one nav-one'
+      'subbox search nav-two ';
+      }
+  
+    header.sticky{
+      background: #1b2141;
+      box-shadow: 0 5px 20px rgba(58,58,58,0.9);
+    }
+  
+    header .subbox {
+      position: relative;
+      color: #fff;
+      text-decoration: none;
+      font-size: 2em;
+      font-weight: 700;
+    }
+  
+    header .nav
+    {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    header .smallnav
+    {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+    }
+  
+    header ul li{
+      list-style: none;
+      margin: 10px;
+    }
+  
+    header ul li a
+    {
+      list-style: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+    }
+  
+    header ul li a:hover
+    {
+      background: #1aeeef;
+      color: #050e2d;
+      box-shadow: 0 0 10px #1aeeef;
+    }
+  
+    header .action .searchBx{
+      padding: 5px;
+      margin: 5px;
+      display: flex;
+      justify-content: center;
+      background: #fff;
+      border-radius: 5px;
+    }
+  
+    header .action .searchBx i{
+      font-size: 1.4em;
+      margin: 5px;
+      color: #222;
+    }
+  
+    header .action .searchBx input{
+      outline: none;
+      border: none;
+      font-size: 1em;
+      color: #222;
+    }
+  
+    font{
+      color: red;
+    }
+
+    .des{
+        margin-left: 150px;
+        text-align: start;
+        padding: 10px 0;
+    }
+
+    .des span{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .des h3{
+        padding-top: 7px;
+        color: red;
+        font-weight: 700;
+        font-size: 30px;
+    }
+    .des h4{
+        padding-top: 7px;
+        color: #fff;
+        font-weight: 400;
+        font-size: 15px;
+    }
+
+    .des .star {
+        font-size: 15px;
+        color: rgb(243,181,25);
+    }
+
+    .des .star span{
+        color: rgb(243,181,25);
+        font-size: 20px;
+    }
+
+    .des img{
+        width: 500px;
+        height: 320px;
+    }
+
+    .box-item {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+      }
+
+    .box-item li{
+        list-style: none;
+        cursor: pointer;
+    }
+
+    .box-item li img{
+        transform-origin: 0 0;
+        transition: transform .25s, visibility .25s ease-in;
+    }
+
+    .box-item li:hover{
+        transform: translateX(150px);
+        transform: scale(1.5);
+    }
+
+    .box-item img {
+        width: 300px;
+        margin: 12px 0;
+      }
+      .boxmain {
+        border-radius: 10px;
+        background-color: #1b2141;
+        padding: 20px;
+        margin: 10px;
+      }
+      
+      .container_box-content {
+        width: 96%;
+        margin: 0 auto;
+        display: flex;
+      }
+      
+      .container {
+        margin-top: 100px;
+      }
+      
+      
+      .content-btn a{
+        font-size: 1rem;
+        border: 2px solid red;
+        font-weight: bold;
+        padding: 12px 16px;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+      
+      .btn__cart {
+        color: red;
+        background-color: burlywood;
+        margin-right: 15px;
+      }
+
+      .btn__cart:hover{
+        background-color: #1aeeef;
+        color: #050e2d;
+        box-shadow: 0 0 10px #1aeeef;
+      }
+      
+      .btn__buy {
+        text-decoration: none;
+        background-color: red;
+        color: #fff;
+      }
+
+      .btn__buy:hover {
+        background-color: #1aeeef;
+        color: #050e2d;
+        box-shadow: 0 0 10px #1aeeef;
+      }
+      
+      .content-btn {
+        margin: 20px;
+      }
